@@ -1,0 +1,13 @@
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.UPS\Views\Configure.cshtml
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.UPS\web.config
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.UPS\Description.txt
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.UPS\logo.jpg
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.UPS\Nop.Plugin.Shipping.UPS.dll.config
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.UPS\Nop.Plugin.Shipping.UPS.dll
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.UPS\Nop.Plugin.Shipping.UPS.XmlSerializers.dll
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.UPS\Nop.Plugin.Shipping.UPS.pdb
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.Shipping.UPS\obj\Release\Nop.Plugin.Shipping.UPS.csproj.App.config
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.Shipping.UPS\obj\Release\Nop.Plugin.Shipping.UPS.csproj.CoreCompileInputs.cache
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.Shipping.UPS\obj\Release\Nop.Plugin.Shipping.UPS.dll
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.Shipping.UPS\obj\Release\Nop.Plugin.Shipping.UPS.pdb
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.Shipping.UPS\obj\Release\Nop.Plugin.Shipping.UPS.XmlSerializers.dll

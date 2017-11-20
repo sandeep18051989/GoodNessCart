@@ -1,0 +1,15 @@
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Description.txt
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Views\Configure.cshtml
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Views\PublicInfo.cshtml
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\web.config
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Content\facebookstyles.css
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Content\Images\facebook-signing.png
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\logo.jpg
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Nop.Plugin.ExternalAuth.Facebook.dll.config
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Nop.Plugin.ExternalAuth.Facebook.dll
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Nop.Plugin.ExternalAuth.Facebook.pdb
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\Nop.Plugin.ExternalAuth.Facebook.csproj.App.config
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\Nop.Plugin.ExternalAuth.Facebook.csprojResolveAssemblyReference.cache
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\Nop.Plugin.ExternalAuth.Facebook.csproj.CoreCompileInputs.cache
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\Nop.Plugin.ExternalAuth.Facebook.dll
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\Nop.Plugin.ExternalAuth.Facebook.pdb

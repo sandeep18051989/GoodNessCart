@@ -1,0 +1,15 @@
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\bin\Nop.Admin.dll.config
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\bin\Nop.Admin.dll
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\bin\Nop.Admin.pdb
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Administration\obj\Debug\Nop.Admin.csproj.App.config
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Administration\obj\Debug\Nop.Admin.csprojResolveAssemblyReference.cache
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Administration\obj\Debug\Nop.Admin.csproj.CoreCompileInputs.cache
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Administration\obj\Debug\Nop.Admin.dll
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Administration\obj\Debug\Nop.Admin.pdb
+D:\Development\Nop3.9GoodCart\Presentation\Nop.Web\bin\Nop.Admin.dll.config
+D:\Development\Nop3.9GoodCart\Presentation\Nop.Web\bin\Nop.Admin.dll
+D:\Development\Nop3.9GoodCart\Presentation\Nop.Web\bin\Nop.Admin.pdb
+D:\Development\Nop3.9GoodCart\Presentation\Nop.Web\Administration\obj\Debug\Nop.Admin.csproj.App.config
+D:\Development\Nop3.9GoodCart\Presentation\Nop.Web\Administration\obj\Debug\Nop.Admin.csprojResolveAssemblyReference.cache
+D:\Development\Nop3.9GoodCart\Presentation\Nop.Web\Administration\obj\Debug\Nop.Admin.dll
+D:\Development\Nop3.9GoodCart\Presentation\Nop.Web\Administration\obj\Debug\Nop.Admin.pdb

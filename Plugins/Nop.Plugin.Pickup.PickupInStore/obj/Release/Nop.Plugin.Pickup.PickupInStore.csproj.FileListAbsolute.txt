@@ -1,0 +1,14 @@
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Description.txt
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Views\Configure.cshtml
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Views\Create.cshtml
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Views\Edit.cshtml
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Views\_CreateOrUpdate.cshtml
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\web.config
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\logo.png
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Nop.Plugin.Pickup.PickupInStore.dll.config
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Nop.Plugin.Pickup.PickupInStore.dll
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Nop.Plugin.Pickup.PickupInStore.pdb
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.Pickup.PickupInStore\obj\Release\Nop.Plugin.Pickup.PickupInStore.csprojResolveAssemblyReference.cache
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.Pickup.PickupInStore\obj\Release\Nop.Plugin.Pickup.PickupInStore.csproj.CoreCompileInputs.cache
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.Pickup.PickupInStore\obj\Release\Nop.Plugin.Pickup.PickupInStore.dll
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.Pickup.PickupInStore\obj\Release\Nop.Plugin.Pickup.PickupInStore.pdb

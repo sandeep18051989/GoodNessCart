@@ -1,0 +1,140 @@
+﻿@model CheckoutShippingMethodModel
+@using Nop.Web.Models.Checkout;
+<div class="checkout-data">
+    <div class="section shipping-method hidden">
+        @Html.Widget("op_checkout_shipping_method_top")
+        @if (Model.Warnings.Count == 0)
+        {
+            <ul class="method-list">
+                @for (int i = 0; i < Model.ShippingMethods.Count; i++)
+                {
+                    var shippingMethod = Model.ShippingMethods[i];
+                    <li>
+                        <div class="method-name">
+                            <input id="shippingoption_@(i)" type="radio" name="shippingoption" value="@(shippingMethod.Name)___@(shippingMethod.ShippingRateComputationMethodSystemName)" checked="@shippingMethod.Selected" />
+                            <label for="shippingoption_@(i)">@T("Checkout.SelectShippingMethod.MethodAndFee", shippingMethod.Name, shippingMethod.Fee)</label>
+                        </div>
+                        @if (!String.IsNullOrEmpty(shippingMethod.Description))
+                        {
+                            <div class="method-description">
+                                @Html.Raw(shippingMethod.Description)
+                            </div>
+                        }
+                    </li>
+                }
+            </ul>
+            if (Model.NotifyCustomerAboutShippingFromMultipleLocations)
+            {
+                <div class="multiple-locations">
+                    @T("Checkout.ShippingMethod.ShippingFromMultipleLocations")
+                </div>
+            }
+        }
+        else
+        {
+            <div class="message-error">
+                <ul>
+                    @foreach (var warning in Model.Warnings)
+                    {
+                        <li>@warning</li>
+                    }
+                </ul>
+            </div>
+        }
+        @Html.Widget("op_checkout_shipping_method_bottom")
+    </div>
+	<div class="row p-lg">
+	<div class="col-md-8">
+	<div class="shipping_providers text-left">
+		<h3>Select your shipping provider and delivery slot</h3>
+		<div class="provider m-b-lg">
+		<div class="provider_logo m-t m-b"><img src="~/Themes/Element/Content/img/fetchr.png" alt="fetchr" /></div>
+		<div class="timingSlots">
+			<a href="javascript:;" class="time available active">9-10 am</a>
+			<a href="javascript:;" class="time available">10-11 am</a>
+			<a href="javascript:;" class="time not-available">12-1 pm</a>
+		</div>
+		</div>
+		<div class="provider m-b-lg">
+		<div class="provider_logo m-t m-b"><img src="~/Themes/Element/Content/img/aramex.png" alt="aramex" /></div>
+		<div class="timingSlots">
+			<a href="javascript:;" class="time available">9-10 am</a>
+			<a href="javascript:;" class="time available">10-11 am</a>
+			<a href="javascript:;" class="time available">12-1 pm</a>
+		</div>
+		</div>
+	</div>
+	</div>
+	<div class="col-md-4">
+		<div class="bordered p-m">
+				
+                    <div class="total-info">
+    <table class="cart-total">
+        <tbody>
+            <tr class="order-subtotal">
+                <td class="cart-total-left">
+                    <label>Total:</label>
+                </td>
+                <td class="cart-total-right">
+                    <span class="value-summary">AED 24.00</span>
+                </td>
+            </tr>
+                            <tr class="shipping-cost">
+                    <td class="cart-total-left">
+                        <label>Shipping:</label>
+                            <span class="selected-shipping-method">(Ground)</span>
+                    </td>
+                    <td class="cart-total-right">
+                            <span class="value-summary">AED 0.00</span>
+                    </td>
+                </tr>
+                                                    <tr class="tax-value">
+                    <td class="cart-total-left">
+                        <label>Tax:</label>
+                    </td>
+                    <td class="cart-total-right">
+                        <span class="value-summary">AED 0.00</span>
+                    </td>
+                </tr>
+                                                <tr class="order-total">
+                <td class="cart-total-left">
+                    <label>Total:</label>
+                </td>
+                <td class="cart-total-right">
+                        <span class="value-summary"><strong>AED 24.00</strong></span>
+                </td>
+            </tr>
+                <tr class="earn-reward-points">
+                    <td class="cart-total-left">
+                        <label>You will earn:</label>
+                    </td>
+                    <td class="cart-total-right">
+                        <span class="value-summary">2 points</span>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+</div>
+
+                    					
+                        
+						
+                </div>
+	</div>
+	</div>
+	<hr />
+	<div class="unattended p-lg">
+		<div class="row">
+			<div class="col-md-6">
+			<input type="checkbox" name="unattended" value="html" id="html" checked /> 
+			<label class="choice text-left" for="html"><strong>Unattended Delivery</strong><br /><small>Check this to drop the package at your door due to non availability</small></label>
+			</div>
+			<div class="col-md-6">
+				<small class="text-right">
+				Please ensure all chilled products do not remain outside (+4C) for longer than 2 hours or else will result in spoilage and should be discarded.
+				</small>
+			</div>
+		</div>
+		
+	</div>
+</div>

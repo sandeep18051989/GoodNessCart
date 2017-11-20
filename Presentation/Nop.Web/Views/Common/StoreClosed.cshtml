@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "~/Views/Shared/_ColumnsOne.cshtml";
+
+    //title
+    Html.AddTitleParts(T("PageTitle.StoreClosed").Text);
+    //page class
+    Html.AppendPageCssClassParts("html-store-closed-page");
+}
+<div class="page store-closed-page">
+<div class="text-center m-b"><img src="~/Themes/Element/Content/img/store-closed.png" alt="" /></div>
+    <div class="page-title">
+        <h1>@T("StoreClosed")</h1>
+    </div>
+    <div class="page-body hidden">
+        @T("StoreClosed.Hint")
+    </div>
+	<div class="page-body text-center" style="min-height:300px; width:400px; margin:0 auto;">
+		<h1 class="m-b-xs text-red">SEE YOU TOMORROW</h1>
+		<h3 class="text-none m-b-lg">We are currently closed for the weekend, leave us your email address and we will get in touch bright and early in the morning... </h3>
+		<span><img src="~/Themes/Element/Content/img/icon-email.png" alt="" valign="middle" /></span>
+		<input type="text" class="getemail" placeholder="Your Email Address" style="width: 200px;margin:0 10px;">
+		<button class="btnRd">Submit</button>
+    </div>
+</div>

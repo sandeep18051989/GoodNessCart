@@ -1,0 +1,10 @@
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Views\Configure.cshtml
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\web.config
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Description.txt
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\logo.jpg
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll.config
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.pdb
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Release\Nop.Plugin.Shipping.CanadaPost.csproj.CoreCompileInputs.cache
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Release\Nop.Plugin.Shipping.CanadaPost.dll
+C:\Users\Goodnesscart1_hp\Downloads\nopCommerce-release-3.90\src\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Release\Nop.Plugin.Shipping.CanadaPost.pdb

@@ -1,0 +1,154 @@
+﻿@using Nop.Core
+@using Nop.Core.Domain.Tax
+@using Nop.Core.Infrastructure
+@using Nop.Services.Configuration
+@using Nop.Web.Framework.Themes
+@using Nop.Web.Models.Common
+
+@model FooterModel
+
+@{
+    var storeId = EngineContext.Current.Resolve<IStoreContext>().CurrentStore.Id;
+    var settingService = EngineContext.Current.Resolve<ISettingService>();
+    var removeCopyright = settingService.GetSettingByKey("elementthemesettings.removecopyright", false, storeId, true);
+    var removeDesignedBy = settingService.GetSettingByKey("elementthemesettings.removedesignedby", false, storeId, true);
+}
+
+@{
+	var currentThemeName = EngineContext.Current.Resolve<IThemeContext>().WorkingThemeName;
+    var POlogoPath = "~/Themes/" + currentThemeName + "/Content/img/payment-options.png";
+}
+
+<div class="footer-wrapper">
+	<div class="footnotes">
+		<div class="row">
+			<div class="col-md-4"><div class="note1"></div><p>Fast & Convenient Delivery</p></div>
+			<div class="col-md-4"><div class="note2"></div><p>100% Wholesome Products</p></div>
+			<div class="col-md-4"><div class="note3"></div><p>Secure & Easy Payment</p></div>
+		</div>
+	</div>
+    <div class="footer">
+        <div class="footer-upper text-center">
+			<p class="headtitle">Subscribe to stay fit & healthy!</p>
+			<p class="subtext">We will inbox you about our latest items in shelf...</p>
+            @Html.Action("NewsletterBox", "Newsletter")
+			<div class="transbg"></div>
+        </div>
+        <div class="footer-middle">
+            <!--<div class="center">
+                <div class="social-sharing">
+                    <div class="title">
+                        <strong>@T("Footer.SocialSharing")</strong>
+                    </div>
+                    @Html.Action("Social", "Common")
+                </div>
+                <div class="footer-block footer-block-left">
+                    <div class="title">
+                        <strong>@T("Footer.CustomerService")</strong>
+                    </div>
+                    <ul class="list">
+                        @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn1).ToList())
+                        {
+                            <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+                        }
+                    </ul>
+                </div>
+                <div class="footer-block footer-block-right">
+                    <div class="title">
+                        <strong>@T("Footer.MyAccount")</strong>
+                    </div>
+                    <ul class="list">
+                        <li><a href="@Url.RouteUrl("CustomerInfo")">@T("Account.CustomerInfo")</a></li>
+                        <li><a href="@Url.RouteUrl("CustomerAddresses")">@T("Account.CustomerAddresses")</a></li>
+                        <li><a href="@Url.RouteUrl("CustomerOrders")">@T("Account.CustomerOrders")</a></li>
+
+                        @if (Model.WishlistEnabled)
+                        {
+                            <li><a href="@Url.RouteUrl("Wishlist")">@T("Wishlist")</a></li>
+                        }
+                        @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn2).ToList())
+                        {
+                            <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+                        }
+                    </ul>
+                </div>
+            </div>-->
+			<div class="row">
+				<div class="col-md-3">
+				<p class="footHeadTxt">About Goodnesscart</p>
+				<div class="about"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum vestibulum tellus ultrices varius. In eu mauris et quam consectetur dignissim. Quisque vitae ex mauris. Praesent scelerisque sagittis urna nec congue. Quisque eget dolor mollis, laoreet tortor ut, interdum tellus. Read more</p></div>
+				</div>
+				<div class="col-md-2 col-md-offset-1">
+				<p class="footHeadTxt">About</p>
+				<ul>
+					<li><a href="javascript:;">About Us</a></li>
+					<li><a href="javascript:;">Favorite Shops</a></li>
+					<li><a href="javascript:;">Handpicked Items</a></li>
+					<li><a href="javascript:;">Our Standard</a></li>
+					<li><a href="javascript:;">Loyalty Points</a></li>
+				</ul>
+				</div>
+				<div class="col-md-2 col-md-offset-1">
+				<p class="footHeadTxt">Help</p>
+				<ul>
+					<li><a href="javascript:;">Contact Us</a></li>
+					<li><a href="javascript:;">Shipping</a></li>
+					<li><a href="javascript:;">Returns & Refunds</a></li>
+					<li><a href="javascript:;">Terms & Conditions</a></li>
+					<li><a href="javascript:;">Privacy</a></li>
+				</ul>
+				</div>
+				<div class="col-md-2 col-md-offset-1">
+				<p class="footHeadTxt">Keep in touch</p>
+				<ul class="socialbtn">
+					<li><a href="javascript:;"><i class="flaticon-facebook"></i> /goodnesscart</a></li>
+					<li><a href="javascript:;"><i class="flaticon-instagram"></i> /goodnesscart</a></li>
+				</ul>
+				</div>
+			</div>
+			<hr />
+			<div class="row trending">
+			<div class="col-md-12">
+			<p class="footHeadTxt">Whats trending</p>
+			<a href="javascript:;">Keto Foods</a><a href="javascript:;">Light Dinner</a><a href="javascript:;">Workout Boosters</a><a href="javascript:;">Gluten Free</a><a href="javascript:;">Keto Foods</a><a href="javascript:;">Light Dinner</a><a href="javascript:;">Workout Boosters</a>
+			</div>
+			</div>
+			<hr />
+			<div class="row trending">
+			<div class="col-md-12">
+			<p class="footHeadTxt">Favorite Shops</p>
+			<a href="javascript:;">Keto Foods</a><a href="javascript:;">Light Dinner</a><a href="javascript:;">Workout Boosters</a><a href="javascript:;">Gluten Free</a><a href="javascript:;">Keto Foods</a><a href="javascript:;">Light Dinner</a><a href="javascript:;">Workout Boosters</a>
+			</div>
+			</div>
+        </div>
+        <div class="footer-lower center">
+            <!--@if(!removeCopyright)
+            { 
+                <p class="footer-text footer-powered-by">
+                    Copyright © 2017. All rights reserved. Goodnesscart.com
+                </p>
+            }
+            @if (!removeDesignedBy)
+            {
+                <p class="footer-text footer-designed-by">
+                    Designed by <a href="http://www.nop-templates.com/" target="_blank">Nop-Templates.com</a>
+                </p>
+            }-->
+            <div class="footer-text footer-disclaimer">
+			<div>Office 309-35, 3rd Floor, Jumeirah Bay X2 Tower, X Cluster, JLT, PO BOX 126732, Dubai - UAE<br />hello@goodnesscart.com, Tel: +9714-4273606</div><br /><p><img src="@Url.Content(POlogoPath)" alt="payment options" /></p><br />
+                @T("Content.CopyrightNotice", DateTime.Now.Year, Model.StoreName)
+				
+            </div>
+            <!--@if (Model.DisplayTaxShippingInfoFooter)
+            {
+                var inclTax = EngineContext.Current.Resolve<IWorkContext>().TaxDisplayType == TaxDisplayType.IncludingTax;
+                <p class="footer-text footer-tax-shipping">
+                    @T(inclTax ? "Footer.TaxShipping.InclTax" : "Footer.TaxShipping.ExclTax", Url.RouteUrl("Topic", new { SeName = Html.GetTopicSeName("shippinginfo") }))
+                </p>
+            }-->
+
+            @Html.Action("StoreThemeSelector", "Common")
+        </div>
+        @Html.Widget("footer")
+    </div>
+</div>

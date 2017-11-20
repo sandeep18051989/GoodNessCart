@@ -1,0 +1,120 @@
+﻿@model LoginModel
+@using Nop.Web.Models.Customer;
+@using Nop.Core;
+@using Nop.Core.Infrastructure;
+@using Nop.Services.Localization
+@using Nop.Web.Framework.Themes
+@using System.Web.Mvc
+@{
+    Layout = "~/Views/Shared/_ColumnsOne.cshtml";
+
+    //title
+    Html.AddTitleParts(T("PageTitle.Login").Text);
+    //page class
+    Html.AppendPageCssClassParts("html-login-page");
+
+    //register URL with return URL (if specified)
+    var registerUrl = Url.RouteUrl("Register");
+    if (!String.IsNullOrEmpty(this.Context.Request.QueryString["returnUrl"]))
+    {
+        var webHelper = EngineContext.Current.Resolve<IWebHelper>();
+        registerUrl = webHelper.ModifyQueryString(registerUrl, "returnurl=" + HttpUtility.UrlEncode(this.Context.Request.QueryString["returnUrl"]), null);
+    }
+}
+
+
+<div class="page login-page">
+    <div class="page-title">
+        <h1>@T("Account.Login.Welcome")</h1>
+    </div>
+    @Html.Partial("_ExternalAuthentication.AssociateMessage")
+    @Html.Partial("_ExternalAuthentication.Errors")
+    <div class="page-body">
+	@if (Model.CheckoutAsGuest)
+   {
+	<div class="floatbtn">
+	<button type="button" class="button-1 checkout-as-guest-button ripple" onclick="location.href='@Url.RouteUrl("Checkout")'"><span>@T("Account.Login.CheckoutAsGuest")</span></button>
+	</div>
+	}
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 text-center">
+			
+			<div class="loginbox m-t-lg m-b-lg">
+			<a href="@Url.RouteUrl("HomePage")"><img src="~/Themes/Element/Content/img/G-logo.png" alt="" height="100" /></a>
+			<h2 class="m-b-lg">Let's make your day healthy</h2>
+				@using (Html.BeginForm())
+                {
+                    var validationSummary = Html.ValidationSummary(true, T("Account.Login.Unsuccessful").Text);
+                    
+                    <div>
+                        <div class="content form-fields">
+                            @if (!MvcHtmlString.IsNullOrEmpty(validationSummary))
+                            {
+                                <div class="message-error">@validationSummary</div>
+                            }
+                            @if (Model.UsernamesEnabled)
+                            {
+                                <div class="inputs hidden">
+                                    <!--@Html.LabelFor(m => m.Username, new { }, ":")-->
+                                    @Html.TextBoxFor(m => m.Username, new { @class = "username form-control full", autofocus = "autofocus" })
+                                    @Html.ValidationMessageFor(m => m.Username)
+                                </div>								
+                            }
+                            else
+                            {
+                                <div class="inputs">
+                                    <!--@Html.LabelFor(m => m.Email, new { }, ":")-->
+                                    @Html.TextBoxFor(m => m.Email, new { @class = "email form-control full", autofocus = "autofocus", placeholder = "Email" })
+                                    @Html.ValidationMessageFor(m => m.Email)
+                                </div>
+								
+                            }
+                            <div class="inputs">
+                                <!--@Html.LabelFor(m => m.Password, new { }, ":")-->
+                                @Html.PasswordFor(m => m.Password, new { @class = "password form-control full", placeholder = "Password" })
+                                @Html.ValidationMessageFor(m => m.Password)
+								<span class="forgot-password">
+                                    @Html.RouteLink(T("Account.Login.ForgotPassword").Text, "PasswordRecovery")
+                                </span>
+                            </div>
+                            
+                            @if (Model.DisplayCaptcha)
+                            {
+                                <div class="captcha-box">
+                                    @Html.Raw(Html.GenerateCaptcha())
+                                </div>
+                            }
+                        </div>
+                        <div class="buttons">
+                            <button class="button-1 login-button ripple" type="submit"><span>@T("Account.Login.LoginButton")</span></button>
+                        </div>
+						<div class="askBox">
+						<p>Don't have an account? <a href="@registerUrl">Sign Up</a></p>
+						</div>
+						<div class="socialSignup">
+						@Html.Action("ExternalMethods", "ExternalAuthentication")
+						</div>
+                    </div>
+                }
+			</div>
+		</div>
+		<div class="col-md-6 col-md-offset-3 hidden">
+		@if (Model.CheckoutAsGuest)
+            {
+                <div class="text-center">
+                    <div class="inner-wrapper">
+                        <strong>NEW CUSTOMERS</strong>
+						<p>Create your account after checkout and cash in with all our great offers.</p>
+                        <div class="buttons">
+                            <button type="button" class="button-1 checkout-as-guest-button" onclick="location.href='@Url.RouteUrl("Checkout")'"><span>@T("Account.Login.CheckoutAsGuest")</span></button>
+                        </div>
+                    </div>
+                </div>
+            }
+		</div>
+		
+	</div>      
+        
+        
+    </div>
+</div>

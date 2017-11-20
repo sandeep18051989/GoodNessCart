@@ -1,0 +1,102 @@
+﻿@model MiniShoppingCartModel
+@using Nop.Web.Models.ShoppingCart;
+<div id="flyout-cart" class="flyout-cart">
+    <div class="mini-shopping-cart">
+        <div class="count">
+			
+            @if (Model.TotalProducts == 0)
+            {
+                <div class="text-center text-red">@T("ShoppingCart.Mini.NoItems")</div>
+            }
+            else
+            {
+                <div class="text-center m-b hidden">@Html.Raw(string.Format(T("ShoppingCart.Mini.ItemsText").Text, string.Format("<a href=\"{0}\">{1}</a>", Url.RouteUrl("ShoppingCart"), string.Format(T("ShoppingCart.Mini.Items").Text, Model.TotalProducts))))</div>
+				<div class="cartBox">
+				<div class="gatingBox m-b">
+				<div class="row">
+					<div class="getLoc">
+						<div class="col-md-9">
+							<!--<i class="flaticon-gps"></i>--> <p>Delivery to</p><div><strong>Jumeirah Lakes Towers</strong></div>
+						</div>
+						<div class="col-md-3 text-right">
+							<a href="#" class="changeBtn">Change</a>
+						</div>
+					</div>
+					<div class="changeLoc">						
+						<div class="col-md-12">
+							<input type="text" class="getlocarea" placeholder="Type your neighborhood" style="width: 100%;">						
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+			<hr />
+			<div class="cartValueProgress m-t">
+				<span>Min order for delivery</span><span class="text-right inlineblk pull-right">-70 AED</span>
+				<div class="progressBar clearfix">
+					<div class="progressMeter" style="width: 25%"></div>
+					
+				</div>
+			</div>
+			</div>
+            }
+			
+			
+        </div>
+		
+        @if (Model.TotalProducts > 0)
+        {
+            <div class="items">
+                @for (int i = 0; i < Model.Items.Count; i++)
+                {
+                    var item = Model.Items[i];
+                    <div class="item @(i == 0 ? "first" : null)">
+                        @if (Model.ShowProductImages)
+                        {
+                            <div class="picture">
+                                <a href="@Url.RouteUrl("Product", new { SeName = item.ProductSeName })" title="@item.Picture.Title">
+                                    <img alt="@item.Picture.AlternateText" src="@item.Picture.ImageUrl" title="@item.Picture.Title" />
+                                </a>
+                            </div>
+                        }
+                        <div class="product">
+                            <div class="name">
+                                <a href="@Url.RouteUrl("Product", new { SeName = item.ProductSeName })">@item.ProductName</a>
+                            </div>
+                            @if (!String.IsNullOrEmpty(item.AttributeInfo))
+                            {
+                                <div class="attributes">
+                                    @Html.Raw(item.AttributeInfo)
+                                </div>
+                            }
+                            <div class="quantity">@T("ShoppingCart.Mini.Quantity"): <span>@item.Quantity</span></div>
+                            <div class="price">@T("ShoppingCart.Mini.UnitPrice"): <span>@item.UnitPrice</span></div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="totals hidden">@T("ShoppingCart.Totals.SubTotal"): <strong>@Model.SubTotal</strong></div>
+            <div class="buttons">
+                @if (Model.DisplayShoppingCartButton)
+                {
+                    <button type="button" class="button-1 cart-button btnRed" onclick="setLocation('@(Url.RouteUrl("ShoppingCart"))')"><span>@T("ShoppingCart.Mini.ViewCart")</span></button>
+                    
+                }
+                @if (Model.DisplayCheckoutButton)
+                {
+                    var checkoutUrl = "";
+                    if (Model.AnonymousCheckoutAllowed && Model.CurrentCustomerIsGuest)
+                    {
+                        checkoutUrl = Url.RouteUrl("LoginCheckoutAsGuest", new { returnUrl = Url.RouteUrl("ShoppingCart") });
+                    }
+                    else
+                    {
+                        checkoutUrl = Url.RouteUrl("Checkout");
+                    }
+                    <button type="button" class="button-1 checkout-button hidden" onclick="setLocation('@checkoutUrl')"><span>@T("SevenSpikes.Themes.Element.FlyoutCart.Checkout.Button")</span></button>
+                }
+            </div>
+        }
+    </div>
+</div>
