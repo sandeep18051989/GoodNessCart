@@ -3923,7 +3923,7 @@ label, label + * {
 .block-account-navigation {
 	float: none !important;
 	min-width: 300px;
-	margin: 50px auto -10px !important;
+	margin: 50px auto -10px;
 }
 
 .add-more-external-records {
